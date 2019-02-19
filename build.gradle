@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.demo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+ext{
+	resilience4jVersion = '0.12.1'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compile("io.github.resilience4j:resilience4j-spring-boot:${resilience4jVersion}")
+	compile("io.github.resilience4j:resilience4j-metrics:${resilience4jVersion}") // Optional
+	compile("io.github.resilience4j:resilience4j-prometheus:${resilience4jVersion}") // Optional
+	compile("io.github.resilience4j:resilience4j-rxjava2:${resilience4jVersion}") // Optional
+	compile('io.prometheus:simpleclient_spring_boot:0.0.21') // Optional
+	compile("io.vavr:vavr-jackson:0.9.1")
+}

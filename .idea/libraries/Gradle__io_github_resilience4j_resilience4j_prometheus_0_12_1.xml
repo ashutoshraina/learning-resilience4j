@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.resilience4j:resilience4j-prometheus:0.12.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.resilience4j/resilience4j-prometheus/0.12.1/755531157e5b680ac21818cbcf134c469844ab0e/resilience4j-prometheus-0.12.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.resilience4j/resilience4j-prometheus/0.12.1/7d4cbd2865904fa416828073f2abdefe6354015f/resilience4j-prometheus-0.12.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
